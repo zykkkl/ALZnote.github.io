@@ -1,17 +1,6 @@
-# Welcome to MkDocs
+# 这里主要想尝试着记录一些学习笔记
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## 以下是我所学的课程笔记
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- [ ] 运筹学
+- [ ] 人工智能(由于是一个比较大的概念，笔记比较零碎)
