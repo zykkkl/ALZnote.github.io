@@ -36,6 +36,7 @@ markdown_extensions:
       generic: true
 theme: 
   name: 'material'     # 使用material主题,需要pip安   装mkdocs-material
+  custom_dir: overrides
   language: 'zh'       # 使用中文
 #  icon:#
 #    logo: ...#          # 左上角的 logo 
@@ -70,13 +71,21 @@ extra:
     - icon: fontawesome/brands/bilibili
       link: https://space.bilibili.com/252925972
       name: Bilibili | 思慕慕_慕斯
+    - icon: fontawesome/brands/github
+      link: https://github.com/zykkkl
+      name: GitHub | zykkkl
 plugins:
   #- rss
   - search
   - glightbox:
       width: 80%
-#  - git-revision-date-localized:
-#      enable_creation_date: true
+  - git-revision-date-localized:
+      type: datetime
+      fallback_to_build_date: false
+      timezone: Asia/Shanghai
+      enable_creation_date: true
+      locale: zh
+
   #- changelog
   - statistics:
       page_check_metadata: comment
@@ -92,6 +101,7 @@ nav:
     - Note/index.md
   - 一些想法:
     - thought/index.md
+    - 谈读书: thought/For_reading.md
 
   
   
