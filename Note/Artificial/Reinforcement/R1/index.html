@@ -343,17 +343,17 @@
 <ul>
 <li><span>"<span class="heti-spacing"> </span></span>马尔可夫<span class="heti-skip"><span class="heti-spacing"> </span>"<span class="heti-spacing"> </span></span>一般是指<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>鉴于目前的状态<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>未来和过去是独立的</li>
 <li>
-<p>对于马尔可夫决策过程<span class="heti-skip"><span class="heti-spacing"> </span>,"<span class="heti-spacing"> </span></span>马尔可夫<span class="heti-skip"><span class="heti-spacing"> </span>"<span class="heti-spacing"> </span></span>意味着行动结果只取决于当前状态<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>即<span><span class="heti-spacing"> </span><span class="arithmatex">\(P(S_{t+1}=s'|S_t=s_t,A_t=a_t,S_{t-1}=s_{t-1},A_{t-1},\dots, S_0=s_0)=P(S_{t+1}=s'|S_t=s_t,A_t=a_t)\)</span></span></p>
+<p>对于马尔可夫决策过程<span class="heti-skip"><span class="heti-spacing"> </span>, "<span class="heti-spacing"> </span></span>马尔可夫<span class="heti-skip"><span class="heti-spacing"> </span>"<span class="heti-spacing"> </span></span>意味着行动结果只取决于当前状态<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>即<span><span class="heti-spacing"> </span><span class="arithmatex">\(P(S_{t+1}=s'|S_t=s_t,A_t=a_t,S_{t-1}=s_{t-1},A_{t-1},\dots, S_0=s_0)=P(S_{t+1}=s'|S_t=s_t,A_t=a_t)\)</span></span></p>
 </li>
 <li>
-<p>马尔可夫决策过程是“马尔可夫的”，即满足马尔可夫性<span><span class="heti-spacing"> </span>(Markov property)</span>，或是无记忆性
-(memoryless property)，意思是在已知现在状态的情况下，过去和未来是条件独立的。</p>
+<p>马尔可夫决策过程是“马尔可夫的”<span>,<span class="heti-spacing"> </span></span>即满足马尔可夫性<span class="heti-skip"><span class="heti-spacing"> </span>(Markov property),<span class="heti-spacing"> </span></span>或是无记忆性
+(memoryless property), 意思是在已知现在状态的情况下, 过去和未来是条件独立的。</p>
 </li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">策略</p>
 <p>策略<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\pi\)</span><span class="heti-spacing"> </span></span>为每一个状态提供一个行动<br/>
-最佳策略<span class="arithmatex">\(\pi^*\)</span>:遵循该策略,预期效用最大化的策略</p>
+最佳策略<span class="arithmatex">\(\pi^*\)</span>:遵循该策略, 预期效用最大化的策略</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">效用函数</p>
@@ -363,7 +363,7 @@
 <p class="admonition-title">折扣因子</p>
 <p>我们越早拿到奖励越好<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>因此我们假设奖励会随时间的流逝而以指数形势衰减<br/>
 折扣因子<span class="arithmatex">\(\gamma\)</span><br/>
-e.g. 有一个当前奖励是1的操作,这一次没操作,下一次操作的奖励就变成<span class="arithmatex">\(\gamma\)</span>,如果再下一次操作的奖励就变成<span class="arithmatex">\(\gamma^2\)</span></p>
+e.g. 有一个当前奖励是1的操作, 这一次没操作, 下一次操作的奖励就变成<span class="arithmatex">\(\gamma\)</span>,如果再下一次操作的奖励就变成<span class="arithmatex">\(\gamma^2\)</span></p>
 </div>
 <div class="admonition question">
 <p class="admonition-title">为什么我们要折扣因子<span><span class="heti-spacing"> </span>?</span></p>
@@ -374,7 +374,7 @@ e.g. 有一个当前奖励是1的操作,这一次没操作,下一次操作的奖
 <h2 id="_5">赛车问题<a class="headerlink" href="#_5" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="80%" href="../../../../assets/Note/AI/Rein/car.png"><img alt="car" src="../../../../assets/Note/AI/Rein/car.png" title="car racing"/></a></p>
 <p>
-正如题目中所写,一辆车希望能快速通行,自然是速度越快,得分越高,slow操作只能获得0.5分,而fast操作能获得1分
+正如题目中所写, 一辆车希望能快速通行, 自然是速度越快, 得分越高,slow操作只能获得0.5分, 而fast操作能获得1分
 </p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -450,18 +450,78 @@ e.g. 有一个当前奖励是1的操作,这一次没操作,下一次操作的奖
 \end{align}
 \]</div>
 </div>
+<div class="admonition note">
+<p class="admonition-title"><span>Value Iteration<span class="heti-spacing"> </span></span>值迭代</p>
+<p></p><ul>
+<li>从<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\( V_0(s)=0 \)</span><span class="heti-spacing"> </span></span>开始<span class="heti-skip"><span class="heti-spacing"> </span>:<span class="heti-spacing"> </span></span>意味着期望奖励总和为<span><span class="heti-spacing"> </span>0</span></li>
+<li>给出<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\( V_k(s) \)</span><span class="heti-spacing"> </span></span>的值<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>每个状态用<span class="heti-skip"><span class="heti-spacing"> </span>expetimax<span class="heti-spacing"> </span></span>计算<span><span class="heti-spacing"> </span>: <span class="arithmatex">\( V_{k+1}(s)\leftarrow \max_{a}\sum_{s'}T(s,a,s')[R(s,a,s')+\gamma V_k(s')] \)</span></span> </li>
+<li>重复进行<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>直到收敛</li>
+</ul>
+<strong>遍历的复杂度<span><span class="heti-spacing"> </span>:</span></strong><span class="arithmatex">\(O(S^2A)\)</span><br/>
+<strong>定理<span><span class="heti-spacing"> </span>:</span></strong>将收敛到唯一的最优值
+</div>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="80%" href="../../../../assets/Note/AI/Rein/valueiter.png"><img alt="iteration" src="../../../../assets/Note/AI/Rein/valueiter.png" title="iteration"/></a></p>
+<p>
+我们将Cool, Warm, Overheated三个状态的期望奖励总和均从0开始,即 \( V_0(s)=0 \)<br/>
+根据上述的状态转移方程,我们可以计算出采取不同行动 <strong><span>(<span class="heti-spacing"> </span></span>在这里指<span><span class="heti-spacing"> </span>Fast , Slow)</span></strong> 到达下一层状态所能获得的效用值<span class="heti-skip"><span class="heti-spacing"> </span>\(V_1(s')\),<span class="heti-spacing"> </span></span>并取<span class="heti-skip"><span class="heti-spacing"> </span>max<span class="heti-spacing"> </span></span>作为最优效用值<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>作为该层该状态的效用<br/>
+不断重复上述步骤,直至稳定
+</p>
+<div class="admonition note">
+<p class="admonition-title"><span>Dynamic Programming Equation<span class="heti-spacing"> </span></span>动态规划方程</p>
+<p></p><ul>
+<li><span>Bellman<span class="heti-spacing"> </span></span>方程<span class="heti-skip"><span class="heti-spacing"> </span>:<span class="heti-spacing"> </span></span>将决策问题分解为更小的子问题</li>
+<li><span>Bellman<span class="heti-spacing"> </span></span>最优化原理<span class="heti-skip"><span class="heti-spacing"> </span>:<span class="heti-spacing"> </span></span>最优化策略有这样的性质，即无论初始状态和初始决策是什么，余下的决策必定构成一个与由初始决策导致的状态有关的最优化策略。</li>
+<li>表达形式<span><span class="heti-spacing"> </span>:<span class="arithmatex">\(V^*(s)=\max_{a}\sum_{s'}T(s,a,s')[R(s,a,s')+\gamma V^*(s')]\)</span></span></li>
+</ul>
+</div>
+<p>
+注意看上述方程, 原本我们转移方程只是从 \(V_k\) 转移到 \(V_{k+1}\) , 而Bellman论证了我们可以从前一种状态的最优值转移得到下一个状态的最优值,即\(V^*(s) \rightarrow V^*(s')\)<br/>
+最终我们可以提取出一个最优策略<br/>
+\(\pi^*(s)=arg\max_{a}\sum_{s'}T(s,a,s')[R(s,a,s')+\gamma V^*(s')]\)
+</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>我们在值迭代的过程中可以很明显发现它的一些缺点：
+</p><ul>
+<li>迭代速度慢：每一次计算都要从头算起，时间复杂度高</li>
+<li>每个状态下“最大值”很少变化，有很多冗余的迭代</li>
+<li>策略往往在数值之前很长时间就收敛了，提取策略并不需要等到数值收敛再提取</li>
+</ul>
+</div>
+<h2 id="q">改进：从<span class="heti-skip"><span class="heti-spacing"> </span>Q<span class="heti-spacing"> </span></span>值学习<a class="headerlink" href="#q" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>我们可以根据最优<span class="heti-skip"><span class="heti-spacing"> </span>Q<span class="heti-spacing"> </span></span>值<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>确定我们的最优策略<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>即<span><span class="heti-spacing"> </span><span class="arithmatex">\(\pi^*(s)=arg\max_{a}Q^*(s,a)\)</span></span> <br/>
+<strong><span>Q value Iteration Q<span class="heti-spacing"> </span></span>值遍历<span><span class="heti-spacing"> </span>:</span></strong><br/>
+</p><ul>
+<li>从我们已知的<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(Q_0(s,a)=0\)</span><span class="heti-spacing"> </span></span>开始</li>
+<li>我们可以从<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(Q_k\)</span><span class="heti-spacing"> </span></span>转移到<span><span class="heti-spacing"> </span><span class="arithmatex">\(Q_{k+1}\)</span>:<span class="arithmatex">\(\quad Q_{k+1}(s,a) \leftarrow \sum_{s'}T(s,a,s')[R(s,a,s')+\gamma \max_{a'}Q_k(s',a')]\)</span></span></li>
+</ul>
+</div>
+<h1 id="reinforcement-learning"><span>Reinforcement Learning<span class="heti-spacing"> </span></span>强化学习<a class="headerlink" href="#reinforcement-learning" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h1>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="80%" href="../../../../assets/Note/AI/Rein/reinforcement.png"><img alt="reinforcement" src="../../../../assets/Note/AI/Rein/reinforcement.png" title="Reinforcement Learning"/></a></p>
+<div class="admonition note">
+<p class="admonition-title">Basic idea</p>
+<p></p><ul>
+<li>以奖励的形式接受反馈</li>
+<li>智能体的效用是由奖励函数定义的</li>
+<li>必须<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>学会<span class="heti-skip"><span class="heti-spacing"> </span>)<span class="heti-spacing"> </span></span>采取行动<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>以使预期回报最大化</li>
+<li>所有的学习都是基于观察到的结果样本<span><span class="heti-spacing"> </span>!</span></li>
+</ul>
+</div>
+<h2 id="model-based-learning"><span>Model-Based Learning<span class="heti-spacing"> </span></span>基于模型的学习<a class="headerlink" href="#model-based-learning" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="最后更新">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2024年12月13日 00:12:04</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2024年12月13日 23:25:48</span>
 </span>
 <span class="md-source-file__fact">
 <span class="md-icon" title="创建日期">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2024年12月13日 00:12:05</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2024年12月13日 23:25:48</span>
 </span>
 </aside>
 </article>
