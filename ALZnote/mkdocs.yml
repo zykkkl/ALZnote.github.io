@@ -50,9 +50,9 @@ theme:
     - navigation.indexes # 指定节点index pages ，跟instant不兼容
     - toc.integrate # 右侧生产目录
     - navigation.top # 一键回顶部
-  font:                # 字体
-    text: Roboto
-    code: Roboto Mono
+#  font:                # 字体
+#    text: Roboto
+#    code: Roboto Mono
   palette:
     - scheme: default # 配色方案
       primary: indigo
@@ -74,6 +74,9 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/zykkkl
       name: GitHub | zykkkl
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 plugins:
   #- rss
   - search
@@ -99,9 +102,15 @@ nav:
     - 更新记录: changelog.md
   - 学习笔记:
     - Note/index.md
+    - 人工智能: 
+      - 强化学习: Note/Artificial/Reinforcement/R1.md
   - 一些想法:
     - thought/index.md
     - 谈读书: thought/For_reading.md
+    - 随笔: 
+      - 202412: thought/suibi/202412.md
+    - 转载:
+      - thought/Trans/shenghuoshensheng.md
 
   
   
