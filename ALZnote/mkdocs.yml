@@ -77,9 +77,11 @@ extra:
 extra_javascript:
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
 plugins:
   #- rss
   - search
+  - markmap
   - glightbox:
       width: 80%
   - git-revision-date-localized:
@@ -104,6 +106,11 @@ nav:
     - Note/index.md
     - 人工智能: 
       - 强化学习: Note/Artificial/Reinforcement/R1.md
+    - 日语学习中的一些归纳:
+      - Contents: Note/Jap/index.md
+      - 助词: Note/Jap/Knowledge/zhuci/zhuci.md
+      - 形容词: Note/Jap/Knowledge/xingrongci/xingrongci.md
+
   - 一些想法:
     - thought/index.md
     - 谈读书: thought/For_reading.md
