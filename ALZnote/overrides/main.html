@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {{ super() }}
+  
+  {% if page.meta.git_creation_date or page.meta.git_revision_date %}
+  <div class="article-dates">
+    {% if page.meta.git_creation_date %}
+      <span>📅 创建时间：{{ page.meta.git_creation_date }}</span>
+    {% endif %}
+    {% if page.meta.git_revision_date %}
+      <span>✏️ 修改时间：{{ page.meta.git_revision_date }}</span>
+    {% endif %}
+  </div>
+  {% endif %}
+{% endblock %}
