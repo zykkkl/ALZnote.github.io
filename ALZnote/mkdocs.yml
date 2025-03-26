@@ -102,6 +102,8 @@ nav:
   - Home: 
     - index.md
     - 更新记录: changelog.md
+  - 实用工具:
+    - tech/index.md
   - 学习笔记:
     - Note/index.md
     - 人工智能: 
