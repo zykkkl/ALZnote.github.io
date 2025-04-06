@@ -108,6 +108,8 @@ nav:
     - Note/index.md
     - 人工智能: 
       - 强化学习: Note/Artificial/Reinforcement/R1.md
+    - Discrete Mathematics and Probability Theory:
+      - Propositional Logic: Note/Discrete Mathematics and Probability Theory/Propositional_Logic.md
     - 日语学习中的一些归纳:
       - Contents: Note/Jap/index.md
       - 助词: Note/Jap/Knowledge/zhuci/zhuci.md
@@ -117,11 +119,13 @@ nav:
   - 一些想法:
     - thought/index.md
     - 谈读书: thought/For_reading.md
+    - “李叔同杯”观后有感: thought/Lishutong.md
     - 随笔: 
       - 202412: thought/suibi/202412.md
       - 202501: thought/suibi/202501.md
       - 202502: thought/suibi/202502.md
       - 202503: thought/suibi/202503.md
+      - 202504: thought/suibi/202504.md
     - 转载:
       - thought/Trans/shenghuoshensheng.md
       - thought/Trans/nanfangzhoumoxinnian2025.md
