@@ -23,6 +23,10 @@ markdown_extensions:
   - pymdownx.magiclink
   - pymdownx.superfences
   - pymdownx.inlinehilite
+  - pymdownx.wikilinks:
+      base_url: /
+      end_url: .html
+      url_whitespace: '-'
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -127,6 +131,7 @@ nav:
       - 202502: thought/suibi/202502.md
       - 202503: thought/suibi/202503.md
       - 202504: thought/suibi/202504.md
+      - 202505: thought/suibi/202505.md
     - 转载:
       - thought/Trans/shenghuoshensheng.md
       - thought/Trans/nanfangzhoumoxinnian2025.md
