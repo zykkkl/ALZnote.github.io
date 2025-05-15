@@ -23,10 +23,10 @@ markdown_extensions:
   - pymdownx.magiclink
   - pymdownx.superfences
   - pymdownx.inlinehilite
-  - pymdownx.wikilinks:
-      base_url: /
-      end_url: .html
-      url_whitespace: '-'
+#  - pymdownx.wikilinks:
+#      base_url: /
+#      end_url: .html
+#      url_whitespace: '-'
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -108,6 +108,7 @@ nav:
     - 更新记录: changelog.md
   - 实用工具:
     - tech/index.md
+    - 命令行艺术: tech/minglinghang/minglinghangyishu-zh.md
   - 学习笔记:
     - Note/index.md
     - 人工智能: 
