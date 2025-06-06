@@ -125,6 +125,14 @@ nav:
         - 0A:方法: Note/Refold/0/0A.md
         - 0B:心态: Note/Refold/0/0B.md
         - 0C:核心活动: Note/Refold/0/0C.md
+      - 阶段1:建立基础:
+        - 1A:配置好工具，养成好习惯: Note/Refold/1/1A.md
+        - 1B:学习基础知识: Note/Refold/1/1B.md
+        - 1C:快速启动你的理解力: Note/Refold/1/1C.md
+      - 阶段2:建立理解:
+        - 2A:克服难度陡坡: Note/Refold/2/2A.md
+        - 2B:拓宽你的领域: Note/Refold/2/2B.md
+        - 2C:精通理解: Note/Refold/2/2C.md
 
   - 一些想法:
     - thought/index.md
@@ -139,6 +147,7 @@ nav:
       - 202503: thought/suibi/202503.md
       - 202504: thought/suibi/202504.md
       - 202505: thought/suibi/202505.md
+      - 202506: thought/suibi/202506.md
     - 转载:
       - thought/Trans/shenghuoshensheng.md
       - thought/Trans/nanfangzhoumoxinnian2025.md
