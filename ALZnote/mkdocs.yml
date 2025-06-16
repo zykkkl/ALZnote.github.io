@@ -111,6 +111,7 @@ nav:
     - 命令行艺术: tech/minglinghang/minglinghangyishu-zh.md
   - 学习笔记:
     - Note/index.md
+    - 我自己的CS学习路线: Note/Self_CS_Learning_Route.md
     - 人工智能: 
       - 强化学习: Note/Artificial/Reinforcement/R1.md
     - Discrete Mathematics and Probability Theory:
@@ -140,6 +141,7 @@ nav:
     - “李叔同杯”观后有感: thought/Lishutong.md
     - 关于竞赛的记忆: thought/Contest.md
     - 目前的困惑(2025/05/27): thought/Confusion.md
+    - 对计算机学科的一些看法: thought/AboutCS.md
     - 随笔: 
       - 202412: thought/suibi/202412.md
       - 202501: thought/suibi/202501.md
