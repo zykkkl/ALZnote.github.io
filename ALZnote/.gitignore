@@ -1,0 +1,5 @@
+"site/" 
+"*.html" 
+"*.css" 
+"*.js" 
+"/assets/build/"   # 如果有其他构建目录
