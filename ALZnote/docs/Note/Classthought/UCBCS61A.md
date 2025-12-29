@@ -16,3 +16,6 @@
   - Scheme的Project是用Python实现一个Scheme解释器，还是非常有意思的，项目量也非常大，对于OOP（面向对象编程）思想是一个极大地提升
 - SQL部分就比较基础并且相对容易
 - 终于可以继续肝后续课程UCB CS61B了
+
+## 我的代码实现（有些Optional Problem 未做）
+- [UCB CS61A](../../assets/Note/Classthought/UCBCS61A/CS61A-Assignments-main(Zyk).zip)
