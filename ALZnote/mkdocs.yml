@@ -38,12 +38,12 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.arithmatex:
       generic: true
-theme: 
+theme:
   name: 'material'     # 使用material主题,需要pip安   装mkdocs-material
   custom_dir: overrides
   language: 'zh'       # 使用中文
 #  icon:#
-#    logo: ...#          # 左上角的 logo 
+#    logo: ...#          # 左上角的 logo
   features:
     #- navigation.instant # 点击内部链接时，不用全部刷新页面
     - navigation.tracking # 在url中使用标题定位锚点
@@ -62,13 +62,13 @@ theme:
       primary: indigo
       accent: orange
       toggle:
-        icon: material/weather-night
+        icon: material/brightness-7
         name: 切换至夜间模式
     - scheme: slate
-      primary: indigo
-      accent: orange
+      primary: blue grey
+      accent: deep orange
       toggle:
-        icon: material/weather-sunny
+        icon: material/brightness-4
         name: 切换至日间模式
 extra:
   social:
@@ -78,13 +78,44 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/zykkkl
       name: GitHub | zykkkl
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX  # 需要替换为你的 Google Analytics ID
 extra_javascript:
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
+extra_css:
+  - stylesheets/extra.css
+
 plugins:
-  #- rss
-  - search
+  - search:
+      separator: '[\s\u200b\-]'
+      lang:
+        - zh
+        - en
+  - tags:
+      tags_file: tags.md
+  - blog:
+      blog_dir: thought/suibi
+      post_date_format: yyyy/MM/dd
+      post_url_format: "{date}/{slug}"
+      archive: true
+      archive_name: 归档
+      archive_date_format: yyyy年MM月
+      categories: true
+      categories_name: 分类
+  - rss:
+      match_path: "thought/.*"
+      date_from_meta:
+        as_creation: date
+      categories:
+        - tags
+  - social:
+      cards: true
+      cards_layout_options:
+        background_color: "#1a237e"
+        color: "#ffffff"
   - markmap
   - glightbox:
       width: 80%
@@ -94,30 +125,31 @@ plugins:
       timezone: Asia/Shanghai
       enable_creation_date: true
       locale: zh
-
-  #- changelog
   - statistics:
       page_check_metadata: comment
   - heti
 
-not_in_nav: todo.md
+not_in_nav: |
+  todo.md
+  changelog.md
+  Note/Discrete Mathematics and Probability Theory/Proposistional_Logic.md
+  Note/Refold/2/2B.md
+  Note/Refold/2/2C.md
+  thought/fs/firebird.md
 
-nav: 
-  - Home: 
+nav:
+  - Home:
     - index.md
-    - 更新记录: changelog.md
   - 实用工具:
     - tech/index.md
     - 命令行艺术: tech/minglinghang/minglinghangyishu-zh.md
   - 学习笔记:
     - Note/index.md
-    - 我自己的CS学习路线: 
+    - 我自己的CS学习路线:
       - MIT 6.092:Introduction To Programming In Java: Note/Classthought/Self_CS_Learning_Route.md
       - UMich EECS 498-007 / 598-005:Deep Learning for Computer Vision: Note/Classthought/cv.md
       - CS61A:Structure and Interpretation of Computer Programs: Note/Classthought/UCBCS61A.md
       - SJTU AI2615算法设计与分析: Note/Classthought/SJTUAI2615.md
-    - Discrete Mathematics and Probability Theory:
-      - Propositional Logic: Note/Discrete Mathematics and Probability Theory/Propositional_Logic.md
     - 日语学习中的一些归纳:
       - Contents: Note/Jap/index.md
       - 助词: Note/Jap/Knowledge/zhuci/zhuci.md
@@ -134,8 +166,6 @@ nav:
         - 1C:快速启动你的理解力: Note/Refold/1/1C.md
       - 阶段2:建立理解:
         - 2A:克服难度陡坡: Note/Refold/2/2A.md
-        - 2B:拓宽你的领域: Note/Refold/2/2B.md
-        - 2C:精通理解: Note/Refold/2/2C.md
 
   - 一些想法:
     - thought/index.md
@@ -146,22 +176,12 @@ nav:
     - 对计算机学科的一些看法: thought/AboutCS.md
     - 四月は君の噓: thought/shigatsuwakiminouso.md
     - 浅谈学校教育问题: thought/Schooling.md
-    - 随笔: 
-      - 202412: thought/suibi/202412.md
-      - 202501: thought/suibi/202501.md
-      - 202502: thought/suibi/202502.md
-      - 202503: thought/suibi/202503.md
-      - 202504: thought/suibi/202504.md
-      - 202505: thought/suibi/202505.md
-      - 202506: thought/suibi/202506.md
-      - 20250708总结: thought/suibi/20250708总结.md
     - 转载:
       - thought/Trans/shenghuoshensheng.md
       - thought/Trans/nanfangzhoumoxinnian2025.md
     - 摘抄:
       - 优秀的绵羊: thought/zhaichao/yxdmy.md
       - 四月是你的谎言: thought/zhaichao/sihuang.md
-#    - 喜欢的歌:
- #     - thought/fs
+  - 标签: tags.md
   
   

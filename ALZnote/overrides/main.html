@@ -2,7 +2,7 @@
 
 {% block content %}
   {{ super() }}
-  
+
   {% if page.meta.git_creation_date or page.meta.git_revision_date %}
   <div class="article-dates">
     {% if page.meta.git_creation_date %}
@@ -11,6 +11,28 @@
     {% if page.meta.git_revision_date %}
       <span>✏️ 修改时间：{{ page.meta.git_revision_date }}</span>
     {% endif %}
+  </div>
+  {% endif %}
+
+  <!-- Giscus 评论系统 -->
+  {% if page.meta.comments != false %}
+  <div class="giscus-comments" style="margin-top: 2em; padding-top: 2em; border-top: 1px solid var(--md-default-fg-color--lightest);">
+    <h2>评论</h2>
+<script src="https://giscus.app/client.js"
+        data-repo="zykkkl/ALZnote.github.io"
+        data-repo-id="R_kgDONV9WZQ"
+        data-category="General"
+        data-category-id="DIC_kwDONV9WZc4C3g3G"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
   </div>
   {% endif %}
 {% endblock %}
