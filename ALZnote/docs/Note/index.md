@@ -10,7 +10,8 @@ title: 学习笔记总览
 
 ### 我自己的 CS 学习路线
 
-- [MIT 6.092: Introduction To Programming In Java](Classthought/Self_CS_Learning_Route.md)
+- [学习路线总览](Classthought/Self_CS_Learning_Route.md)
+- [MIT 6.092: Introduction To Programming In Java](Classthought/MIT6092.md)
 - [UMich EECS 498-007 / 598-005: Deep Learning for Computer Vision](Classthought/cv.md)
 - [CS61A: Structure and Interpretation of Computer Programs](Classthought/UCBCS61A.md)
 - [SJTU AI2615 算法设计与分析](Classthought/SJTUAI2615.md)
