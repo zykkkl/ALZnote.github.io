@@ -1,3 +1,7 @@
+---
+title: "UMich EECS 498-007 / 598-005:Deep Learning for Computer Vision"
+---
+
 ## CSdiy课程介绍
 - UMich 的 Computer Vision 课，课程视频和作业质量极高，涵盖的主题非常全，同时 Assignments 的难度由浅及深，覆盖了 CV 主流模型发展的全阶段，是一门非常好的 Computer Vision 入门课。
 
@@ -15,3 +19,4 @@
 - 课程沿用了一些Stanford CS231N的一些材料，但是比CS231N更为深入一些，可以当做上位替代，通过学习能很好掌握Deep Learning以及Computer Vision的基础知识。
 - 课程Lab量大管饱，具有挑战性。每次听课我感觉我都听懂了，动手实现却还是有点难度。要习惯向量化编程，尤其是向量运算维度的问题，我自己开始写经常出现这样或者那样维度不匹配的报错，就得回过头仔细检查前面处理的过程。还有熟悉Pytorch的向量运算方法，很多函数可以直接进行向量运算而不用使用循环，向量化编程可以省下很多running time。
 - 后面的知识还得我抽整块时间学习效果更好啊，现在时间太碎了。
+
