@@ -1,6 +1,9 @@
 ---
 title: "CS61A:Structure and Interpretation of Computer Programs"
+tags:
+  - 未分类
 ---
+
 
 ## CSdiy课程介绍
 - 这不仅仅是一门编程语言课，而是会深入到程序构造与运行的原理。此外，抽象将是这门课的一大主题，你将学习到函数式编程、数据抽象、面向对象等等知识来让你的代码更易读，更模块化。当然，学习编程语言也是这门课的一大内容，你将会掌握 Python、Scheme 和 SQL 这三种编程语言，在它们的学习和比较中，相信你会拥有快速掌握一门新的编程语言的能力。
@@ -23,4 +26,5 @@ title: "CS61A:Structure and Interpretation of Computer Programs"
 
 ## 我的代码实现（有些Optional Problem 未做）
 - [UCB CS61A](../../assets/Note/Classthought/UCBCS61A/CS61A-Assignments-main(Zyk).zip)
+
 
