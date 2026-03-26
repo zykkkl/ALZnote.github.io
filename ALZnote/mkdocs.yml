@@ -2,8 +2,11 @@ site_name: ALznote
 site_author: ZAL
 site_url: https://alznote.org/greater/
 site_description: 为了找寻曾经的热爱
-copyright: Copyright &copy; 2024 ZAL
-strict: true
+copyright: >
+  Copyright &copy; 2024 ZAL -
+  <a href="#__consent">Cookie 设置</a>
+repo_url: https://github.com/zykkkl/ALZnote.github.io
+repo_name: zykkkl/ALZnote.github.io
 
 markdown_extensions:
   - toc:
@@ -41,6 +44,7 @@ markdown_extensions:
       generic: true
 theme:
   name: 'material'     # 使用material主题,需要pip安   装mkdocs-material
+  variant: classic
   custom_dir: overrides
   language: 'zh'       # 使用中文
 #  icon:#
@@ -55,6 +59,7 @@ theme:
     - navigation.indexes # 指定节点index pages ，跟instant不兼容
     - toc.integrate # 右侧生产目录
     - navigation.top # 一键回顶部
+    - search.highlight
 #  font:                # 字体
 #    text: Roboto
 #    code: Roboto Mono
@@ -82,6 +87,14 @@ extra:
   analytics:
     provider: google
     property: G-XXXXXXXXXX  # 需要替换为你的 Google Analytics ID
+  consent:
+    title: Cookie 同意
+    description: >-
+      我们使用 Cookie 来改进文档体验并统计访问情况。你可以选择接受或拒绝分析类 Cookie。
+    actions:
+      - accept
+      - reject
+      - manage
 extra_javascript:
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
@@ -123,14 +136,6 @@ plugins:
   - statistics:
       page_check_metadata: comment
   - heti
-
-not_in_nav: |
-  todo.md
-  changelog.md
-  Note/Discrete Mathematics and Probability Theory/Proposistional_Logic.md
-  Note/Refold/2/2B.md
-  Note/Refold/2/2C.md
-  thought/fs/firebird.md
 
 nav:
   - Home:
