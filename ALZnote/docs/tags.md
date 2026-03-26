@@ -6,4 +6,4 @@ title: 标签索引
 
 通过标签快速找到相关内容。
 
-[TAGS]
+<!-- material/tags -->

@@ -1,6 +1,9 @@
 ---
 title: "SJTU AI2615算法设计与分析"
+tags:
+  - 未分类
 ---
+
 
 ## SJTU AI2615算法设计与分析课程介绍
 - 本节课的授课教师是由上海交通大学约翰·霍普克罗夫特计算机科学中心的[陶表帅教授](https://jhc.sjtu.edu.cn/~bstao/)
@@ -19,4 +22,5 @@ title: "SJTU AI2615算法设计与分析"
 
 ## 课程资料
 - [点击下载](../../assets/Note/Classthought/AI2615/AI2615.zip)
+
 
