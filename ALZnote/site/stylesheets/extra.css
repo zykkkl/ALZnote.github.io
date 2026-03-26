@@ -1,0 +1,96 @@
+/* 自定义样式 */
+
+/* 暗色模式优化 */
+[data-md-color-scheme="slate"] {
+  /* 优化代码块背景 */
+  --md-code-bg-color: #1e1e1e;
+  --md-code-fg-color: #d4d4d4;
+
+  /* 优化链接颜色 */
+  --md-typeset-a-color: #82aaff;
+
+  /* 优化表格样式 */
+  --md-typeset-table-color: rgba(255, 255, 255, 0.12);
+}
+
+/* 日间模式优化 */
+[data-md-color-scheme="default"] {
+  /* 优化代码块背景 */
+  --md-code-bg-color: #f5f5f5;
+
+  /* 优化链接颜色 */
+  --md-typeset-a-color: #3f51b5;
+}
+
+/* 代码块样式优化 */
+.highlight pre {
+  border-radius: 4px;
+  padding: 1em;
+}
+
+/* 行内代码样式 */
+code {
+  border-radius: 3px;
+  padding: 0.1em 0.3em;
+}
+
+/* 标签样式 */
+.md-tag {
+  border-radius: 12px;
+  padding: 0.2em 0.6em;
+  font-size: 0.85em;
+}
+
+/* 博客文章卡片样式 */
+.md-post {
+  transition: transform 0.2s ease-in-out;
+}
+
+.md-post:hover {
+  transform: translateY(-2px);
+}
+
+/* 优化搜索结果高亮 */
+.md-search-result__article--document mark {
+  background-color: #ffeb3b;
+  color: #000;
+  padding: 0 0.2em;
+  border-radius: 2px;
+}
+
+[data-md-color-scheme="slate"] .md-search-result__article--document mark {
+  background-color: #ffa726;
+  color: #000;
+}
+
+/* 优化表格响应式 */
+.md-typeset table:not([class]) {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 优化图片显示 */
+.md-typeset img {
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+[data-md-color-scheme="slate"] .md-typeset img {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 优化引用块 */
+.md-typeset blockquote {
+  border-left: 4px solid var(--md-primary-fg-color);
+  padding-left: 1em;
+}
+
+/* 优化任务列表 */
+.md-typeset .task-list-item {
+  list-style-type: none;
+}
+
+.md-typeset .task-list-control {
+  margin-right: 0.5em;
+}
