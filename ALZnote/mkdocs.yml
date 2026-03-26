@@ -1,0 +1,187 @@
+site_name: ALznote
+site_author: ZAL
+site_url: https://alznote.org/greater/
+site_description: 为了找寻曾经的热爱
+copyright: >
+  Copyright &copy; 2024 ZAL -
+  <a href="#__consent">Cookie 设置</a>
+repo_url: https://github.com/zykkkl/ALZnote.github.io
+repo_name: zykkkl/ALZnote.github.io
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 4
+  - meta
+  - def_list
+  - attr_list
+  - md_in_html
+  - sane_lists
+  - admonition
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+#  - pymdownx.wikilinks:
+#      base_url: /
+#      end_url: .html
+#      url_whitespace: '-'
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.arithmatex:
+      generic: true
+theme:
+  name: 'material'     # 使用material主题,需要pip安   装mkdocs-material
+  variant: classic
+  custom_dir: overrides
+  language: 'zh'       # 使用中文
+#  icon:#
+#    logo: ...#          # 左上角的 logo
+  features:
+    #- navigation.instant # 点击内部链接时，不用全部刷新页面
+    - navigation.tracking # 在url中使用标题定位锚点
+    - navigation.tabs # 顶部显示导航顶层nav（也就是第一个节点）
+    - navigation.tabs.sticky # 滚动时隐藏顶部nav，需要配合navigation.tabs使用
+    - navigation.sections # nav节点缩进
+    - navigation.expand # 不折叠左侧nav节点
+    - navigation.indexes # 指定节点index pages ，跟instant不兼容
+    - toc.integrate # 右侧生产目录
+    - navigation.top # 一键回顶部
+    - search.highlight
+#  font:                # 字体
+#    text: Roboto
+#    code: Roboto Mono
+  palette:
+    - scheme: default # 配色方案
+      primary: indigo
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: 切换至夜间模式
+    - scheme: slate
+      primary: blue grey
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: 切换至日间模式
+extra:
+  social:
+    - icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/252925972
+      name: Bilibili | 思慕慕_慕斯
+    - icon: fontawesome/brands/github
+      link: https://github.com/zykkkl
+      name: GitHub | zykkkl
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX  # 需要替换为你的 Google Analytics ID
+  consent:
+    title: Cookie 同意
+    description: >-
+      我们使用 Cookie 来改进文档体验并统计访问情况。你可以选择接受或拒绝分析类 Cookie。
+    actions:
+      - accept
+      - reject
+      - manage
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search:
+      separator: '[\s\u200b\-]'
+      lang:
+        - zh
+        - en
+  - tags
+  - blog:
+      blog_dir: thought/suibi
+      post_date_format: yyyy/MM/dd
+      post_url_format: "{date}/{slug}"
+      archive: true
+      archive_name: 归档
+      archive_date_format: yyyy年MM月
+      categories: true
+      categories_name: 分类
+  - rss:
+      match_path: "thought/suibi/.*"
+      date_from_meta:
+        as_creation: date
+      categories:
+        - tags
+  - markmap
+  - glightbox:
+      width: 80%
+  - git-revision-date-localized:
+      type: datetime
+      fallback_to_build_date: false
+      timezone: Asia/Shanghai
+      enable_creation_date: true
+      locale: zh
+  - statistics:
+      page_check_metadata: comment
+  - heti
+
+nav:
+  - Home:
+    - index.md
+  - 实用工具:
+    - tech/index.md
+    - 命令行艺术: tech/minglinghang/minglinghangyishu-zh.md
+  - 学习笔记:
+    - Note/index.md
+    - 我自己的CS学习路线:
+      - MIT 6.092:Introduction To Programming In Java: Note/Classthought/Self_CS_Learning_Route.md
+      - UMich EECS 498-007 / 598-005:Deep Learning for Computer Vision: Note/Classthought/cv.md
+      - CS61A:Structure and Interpretation of Computer Programs: Note/Classthought/UCBCS61A.md
+      - SJTU AI2615算法设计与分析: Note/Classthought/SJTUAI2615.md
+    - 日语学习中的一些归纳:
+      - Contents: Note/Jap/index.md
+      - 助词: Note/Jap/Knowledge/zhuci/zhuci.md
+      - 形容词: Note/Jap/Knowledge/xingrongci/xingrongci.md
+      - 动词: Note/Jap/Knowledge/dongci/dongci.md
+    - Refold语言习得路线归纳:
+      - 阶段0:Refold哲学:
+        - 0A:方法: Note/Refold/0/0A.md
+        - 0B:心态: Note/Refold/0/0B.md
+        - 0C:核心活动: Note/Refold/0/0C.md
+      - 阶段1:建立基础:
+        - 1A:配置好工具，养成好习惯: Note/Refold/1/1A.md
+        - 1B:学习基础知识: Note/Refold/1/1B.md
+        - 1C:快速启动你的理解力: Note/Refold/1/1C.md
+      - 阶段2:建立理解:
+        - 2A:克服难度陡坡: Note/Refold/2/2A.md
+
+  - 一些想法:
+    - thought/index.md
+    - 谈读书: thought/For_reading.md
+    - “李叔同杯”观后有感: thought/Lishutong.md
+    - 关于竞赛的记忆: thought/Contest.md
+    - 目前的困惑(2025/05/27): thought/Confusion.md
+    - 对计算机学科的一些看法: thought/AboutCS.md
+    - 四月は君の噓: thought/shigatsuwakiminouso.md
+    - 浅谈学校教育问题: thought/Schooling.md
+    - 转载:
+      - thought/Trans/shenghuoshensheng.md
+      - thought/Trans/nanfangzhoumoxinnian2025.md
+    - 摘抄:
+      - 优秀的绵羊: thought/zhaichao/yxdmy.md
+      - 四月是你的谎言: thought/zhaichao/sihuang.md
+  - 标签: tags.md
+  
+  
