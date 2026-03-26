@@ -44,7 +44,6 @@ markdown_extensions:
       generic: true
 theme:
   name: 'material'     # 使用material主题,需要pip安   装mkdocs-material
-  variant: classic
   custom_dir: overrides
   language: 'zh'       # 使用中文
 #  icon:#
