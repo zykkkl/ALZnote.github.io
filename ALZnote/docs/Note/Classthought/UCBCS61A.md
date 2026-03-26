@@ -1,8 +1,13 @@
 ---
 title: "CS61A:Structure and Interpretation of Computer Programs"
 tags:
-  - 未分类
+  - 学习笔记
+  - 课程笔记
+  - CS61A
 ---
+
+
+
 
 
 ## CSdiy课程介绍
@@ -26,5 +31,8 @@ tags:
 
 ## 我的代码实现（有些Optional Problem 未做）
 - [UCB CS61A](../../assets/Note/Classthought/UCBCS61A/CS61A-Assignments-main(Zyk).zip)
+
+
+
 
 

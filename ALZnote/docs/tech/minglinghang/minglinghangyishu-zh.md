@@ -1,7 +1,11 @@
 ---
 tags:
-  - 未分类
+  - 工具
+  - 命令行
 ---
+
+
+
 
 
 # 命令行的艺术
@@ -612,4 +616,7 @@ mkdir empty && rsync -r --delete empty/ some-dir && rmdir some-dir
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 
 本文使用授权协议 [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/)。
+
+
+
 

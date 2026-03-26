@@ -1,7 +1,10 @@
 ---
 tags:
-  - 未分类
+  - 工具
 ---
+
+
+
 
 # 一系列遇到的好用的工具/软件
 
@@ -25,3 +28,6 @@ tags:
 - [懒人破解包下载](https://zhuanlan.zhihu.com/p/531315462)
 - [SuperMemo——渐进学习最前沿!](https://zhuanlan.zhihu.com/p/452546378) 一文中详细介绍了SuperMemo这款软件的历史以及在渐进学习中的重要作用。
 - [制卡攻略](https://zhuanlan.zhihu.com/p/434074509)
+
+
+
