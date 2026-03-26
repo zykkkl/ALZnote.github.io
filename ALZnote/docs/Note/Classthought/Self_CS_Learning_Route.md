@@ -1,16 +1,25 @@
 ---
-title: "MIT 6.092:Introduction To Programming In Java"
+title: "个人CS学习路线（总览）"
 ---
 
-## 个人CS自学路线
+## 为什么整理这条路线
 
-主要用于记录一下我所学习的CS课程，因为时间有限，所以我不可能把CSdiy里面的全部课程学完，我根据自己的实际情况挑选了一些对我来说有用或者我感兴趣方面的课程进行学习，打好基础，方便后续的深造。
+主要用于记录我在 CS 方向的学习路径。由于时间有限，不会一次性覆盖全部课程，而是优先学习对当前阶段最有价值的内容，先夯实基础，再逐步深入。
 
-## 基础知识
+## 当前课程结构
 
-- [X] [MIT 6.092: Introduction To Programming In Java](https://csdiy.wiki/%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8/Java/MIT%206.092/)
+### 基础与编程能力
 
-介绍了Java一些入门的知识，对Java语言有一个初步的了解认识。建议是把Lec和Lab的代码都自己敲一遍，增加熟练度。
+- [MIT 6.092: Introduction To Programming In Java](MIT6092.md)
+- [CS61A: Structure and Interpretation of Computer Programs](UCBCS61A.md)
 
-不过我Lec7选择性的敲了一下，主要还是掌握子类继承的操作，错误捕获以及抛出，文件读取，可以使用到的时候再学习。
+### 进阶与方向探索
 
+- [SJTU AI2615 算法设计与分析](SJTUAI2615.md)
+- [UMich EECS 498-007 / 598-005: Deep Learning for Computer Vision](cv.md)
+
+## 学习策略
+
+- 先打地基：语言、抽象能力、算法思维并行推进。
+- 以课程为主线：每门课单独成文，记录知识点、作业实践和阶段反思。
+- 以产出驱动理解：重点内容尽量通过代码和小项目复现。
