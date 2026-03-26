@@ -40,7 +40,7 @@ git log --oneline -1
 启用 Actions 后：
 
 1. 访问仓库的 **Actions** 标签页
-2. 在左侧应该能看到 "Deploy MkDocs" 工作流
+2. 在左侧应该能看到 "Deploy Site" 工作流
 3. 点击工作流名称
 4. 点击右侧的 **Run workflow** 按钮
 5. 选择 `main` 分支
@@ -51,11 +51,8 @@ git log --oneline -1
 确保 GitHub Pages 已正确配置：
 
 1. 进入 **Settings** → **Pages**
-2. **Source** 选择：`Deploy from a branch`
-3. **Branch** 选择：`gh-pages` 分支，目录选择 `/ (root)`
-4. 点击 **Save**
-
-注意：首次运行工作流后才会创建 `gh-pages` 分支。
+2. **Source** 选择：`GitHub Actions`
+3. 点击 **Save**
 
 ## 常见问题
 
@@ -77,13 +74,13 @@ git log --oneline -1
 常见错误：
 - **权限问题**：确保 Workflow permissions 设置为 "Read and write"
 - **依赖安装失败**：检查 requirements.txt 中的包版本
-- **构建失败**：检查 mkdocs.yml 配置是否正确
+- **构建失败**：检查 mkdocs.yml 配置是否正确，并确认工作流中使用 `zensical build --clean`
 
 ## 验证部署成功
 
 工作流成功运行后：
 
-1. 检查是否创建了 `gh-pages` 分支
+1. 检查 Actions 工作流是否成功（不再依赖 `gh-pages` 分支）
 2. 访问你的网站：https://zykkkl.github.io/ALZnote.github.io/ 或自定义域名
 3. 如果使用自定义域名，确保在 Settings → Pages 中配置了 Custom domain
 

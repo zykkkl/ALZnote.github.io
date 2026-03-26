@@ -50,8 +50,7 @@
 **步骤**：
 
 1. 进入 GitHub 仓库 Settings → Pages
-2. Source 选择：`Deploy from a branch`
-3. Branch 选择：`gh-pages` 分支，目录选择 `/ (root)`
+2. Source 选择：`GitHub Actions`
 4. 点击 Save
 
 ### 4. 为博客文章添加元数据（可选）
@@ -79,7 +78,7 @@ tags:
 pip install -r requirements.txt
 
 # 本地预览
-mkdocs serve
+zensical serve
 ```
 
 访问 http://127.0.0.1:8000 查看效果。
@@ -91,7 +90,7 @@ mkdocs serve
 git add .
 
 # 提交更改
-git commit -m "feat: 全面优化 MkDocs 配置
+git commit -m "feat: 全面优化 Zensical 配置
 
 - 添加博客、标签、RSS、评论等功能
 - 优化暗色模式和搜索体验
@@ -175,7 +174,7 @@ comments: false
 如果遇到问题：
 
 1. 查看 GitHub Actions 构建日志
-2. 检查 MkDocs 官方文档：https://squidfunk.github.io/mkdocs-material/
+2. 检查 Zensical 官方文档：https://zensical.org/docs/get-started/
 3. 在 GitHub Issues 提问
 
 祝你的网站越来越好！🎊

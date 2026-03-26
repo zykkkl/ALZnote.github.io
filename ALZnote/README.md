@@ -1,10 +1,10 @@
 # ALZnote - 个人知识库
 
-[![部署状态](https://github.com/zykkkl/ALZnote.github.io/workflows/Deploy%20MkDocs/badge.svg)](https://github.com/zykkkl/ALZnote.github.io/actions)
+[![部署状态](https://github.com/zykkkl/ALZnote.github.io/workflows/Deploy%20Site/badge.svg)](https://github.com/zykkkl/ALZnote.github.io/actions)
 
 > 为了找寻曾经的热爱
 
-这是一个基于 MkDocs Material 主题构建的个人知识库网站，记录我的学习笔记、技术分享和个人思考。
+这是一个基于 Zensical 构建的个人知识库网站，记录我的学习笔记、技术分享和个人思考。
 
 ## 🌟 功能特性
 
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 ### 本地预览
 
 ```bash
-mkdocs serve
+zensical serve
 ```
 
 访问 http://127.0.0.1:8000 查看网站。
@@ -43,7 +43,7 @@ mkdocs serve
 ### 构建网站
 
 ```bash
-mkdocs build
+zensical build --clean
 ```
 
 生成的静态文件位于 `site/` 目录。
@@ -52,16 +52,15 @@ mkdocs build
 
 本项目使用 GitHub Actions 自动部署到 GitHub Pages。每次推送到 main 分支时，会自动触发构建和部署流程。
 
-手动部署命令：
+手动部署命令（本地仅构建）：
 
 ```bash
-mkdocs gh-deploy --force
+zensical build --clean
 ```
 
 ## 🛠️ 技术栈
 
-- [MkDocs](https://www.mkdocs.org/) - 静态站点生成器
-- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) - Material Design 主题
+- [Zensical](https://zensical.org/) - 静态站点生成器
 - [PyMdown Extensions](https://facelessuser.github.io/pymdown-extensions/) - Markdown 扩展
 - [Giscus](https://giscus.app/) - 评论系统
 - [MathJax](https://www.mathjax.org/) - 数学公式渲染
