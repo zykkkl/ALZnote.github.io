@@ -27,7 +27,7 @@
 但已经迁移到了 GitHub，并由众多高手做出了许多改进。
 如果你在本文中发现了错误或者存在可以改善的地方，请[**贡献你的一份力量**](/CONTRIBUTING.md)。
 
-## 前言
+## 前言 { #前言 }
 
 涵盖范围：
 
@@ -43,7 +43,7 @@
 - 遇到问题的话，请尝试使用 [Explainshell](http://explainshell.com/) 去获取相关命令、参数、管道等内容的解释。
 
 
-## 基础
+## 基础 { #基础 }
 
 - 学习 Bash 的基础知识。具体地，在命令行中输入 `man bash` 并至少全文浏览一遍; 它理解起来很简单并且不冗长。其他的 shell 可能很好用，但 Bash 的功能已经足够强大并且到几乎总是可用的（ 如果你*只*学习 zsh，fish 或其他的 shell 的话，在你自己的设备上会显得很方便，但过度依赖这些功能会给您带来不便，例如当你需要在服务器上工作时）。
 
@@ -70,7 +70,7 @@
 - 学会使用 `apt-get`，`yum`，`dnf` 或 `pacman` （具体使用哪个取决于你使用的 Linux 发行版）来查找和安装软件包。并确保你的环境中有 `pip` 来安装基于 Python 的命令行工具 （接下来提到的部分程序使用 `pip` 来安装会很方便）。
 
 
-## 日常使用
+## 日常使用 { #日常使用 }
 
 - 在 Bash 中，可以通过按 **Tab** 键实现自动补全参数，使用 **ctrl-r** 搜索命令行历史记录（按下按键之后，输入关键字便可以搜索，重复按下 **ctrl-r** 会向后查找匹配项，按下 **Enter** 键会执行当前匹配的命令，而按下右方向键会将匹配项放入当前行中，不会直接执行，以便做出修改）。
 
@@ -199,7 +199,7 @@
 ```
 
 
-## 文件及数据处理
+## 文件及数据处理 { #文件及数据处理 }
 
 - 在当前目录下通过文件名查找一个文件，使用类似于这样的命令：`find . -iname '*something*'`。在所有路径下通过文件名查找文件，使用 `locate something` （但注意到 `updatedb` 可能没有对最近新建的文件建立索引，所以你可能无法定位到这些未被索引的文件）。
 
@@ -233,7 +233,7 @@
 
 - 你可以单独指定某一条命令的环境，只需在调用时把环境变量设定放在命令的前面，例如 `TZ=Pacific/Fiji date` 可以获取斐济的时间。
 
-- 了解如何使用 `awk` 和 `sed` 来进行简单的数据处理。 参阅 [One-liners](#one-liners) 获取示例。
+- 了解如何使用 `awk` 和 `sed` 来进行简单的数据处理。参阅 [One-liners](#单行脚本) 获取示例。
 
 - 替换一个或多个文件中出现的字符串：
 ```sh
@@ -292,7 +292,7 @@ mkdir empty && rsync -r --delete empty/ some-dir && rmdir some-dir
 
 - 为了高效地创建空文件，请使用 `truncate`（创建[稀疏文件](https://zh.wikipedia.org/wiki/稀疏文件)），`fallocate`（用于 ext4，xfs，btrf 和 ocfs2 文件系统），`xfs_mkfile`（适用于几乎所有的文件系统，包含在 xfsprogs 包中），`mkfile`（用于类 Unix 操作系统，比如 Solaris 和 Mac OS）。
 
-## 系统调试
+## 系统调试 { #系统调试 }
 
 - `curl` 和 `curl -I` 可以被轻松地应用于 web 调试中，它们的好兄弟 `wget` 也是如此，或者也可以试试更潮的 [`httpie`](https://github.com/jkbrzt/httpie)。
 
@@ -336,7 +336,7 @@ mkdir empty && rsync -r --delete empty/ some-dir && rmdir some-dir
 `lsof | grep deleted | grep "filename-of-my-big-file"`
 
 
-## 单行脚本
+## 单行脚本 { #单行脚本 }
 
 一些命令组合的例子：
 
@@ -379,7 +379,7 @@ mkdir empty && rsync -r --delete empty/ some-dir && rmdir some-dir
       }
 ```
 
-## 冷门但有用
+## 冷门但有用 { #冷门但有用 }
 
 - `expr`：计算表达式或正则匹配
 
@@ -528,7 +528,7 @@ mkdir empty && rsync -r --delete empty/ some-dir && rmdir some-dir
 - `fortune`，`ddate` 和 `sl`：额，这主要取决于你是否认为蒸汽火车和莫名其妙的名人名言是否“有用”
 
 
-## 仅限 OS X 系统
+## 仅限 OS X 系统 { #仅限-os-x-系统 }
 
 以下是*仅限于* OS X 系统的技巧。
 
@@ -546,7 +546,7 @@ mkdir empty && rsync -r --delete empty/ some-dir && rmdir some-dir
 
 - 用 `sw_vers` 获取 OS X 的版本信息。
 
-## 仅限 Windows 系统
+## 仅限 Windows 系统 { #仅限-windows-系统 }
 
 以下是*仅限于* Windows 系统的技巧。
 
@@ -588,7 +588,7 @@ mkdir empty && rsync -r --delete empty/ some-dir && rmdir some-dir
 
 - 要在 Windows 上获取 GNU 开发者工具（比如 GCC）的另一个办法是使用 [MinGW](http://www.mingw.org/) 以及它的 [MSYS](http://www.mingw.org/wiki/msys) 软件包，该软件包提供了 bash、gawk、make、grep 等工具。然而 MSYS 提供的功能没有 Cygwin 完善。MinGW 在创建 Unix 工具的 Windows 原生移植方面非常有用。
 
-## 更多资源
+## 更多资源 { #更多资源 }
 
 - [awesome-shell](https://github.com/alebcay/awesome-shell)：一份精心组织的命令行工具及资源的列表。
 - [awesome-osx-command-line](https://github.com/herrbischoff/awesome-osx-command-line)：一份针对 OS X 命令行的更深入的指南。
@@ -597,7 +597,7 @@ mkdir empty && rsync -r --delete empty/ some-dir && rmdir some-dir
 - [Filenames and Pathnames in Shell](http://www.dwheeler.com/essays/filenames-in-shell.html)：有关如何在 shell 脚本里正确处理文件名的细枝末节。
 - [Data Science at the Command Line](http://datascienceatthecommandline.com/#tools)：用于数据科学的一些命令和工具，摘自同名书籍。
 
-## 免责声明
+## 免责声明 { #免责声明 }
 
 除去特别小的工作，你编写的代码应当方便他人阅读。能力往往伴随着责任，你 *有能力* 在 Bash 中玩一些奇技淫巧并不意味着你应该去做！;)
 
