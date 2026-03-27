@@ -142,6 +142,9 @@ nav:
   - 实用工具:
     - tech/index.md
     - 命令行艺术: tech/minglinghang/minglinghangyishu-zh.md
+    - CS学习路线资源: tech/cs-roadmap.md
+    - Anki: tech/anki.md
+    - SuperMemo: tech/supermemo.md
   - 学习笔记:
     - Note/index.md
     - 我自己的CS学习路线:
