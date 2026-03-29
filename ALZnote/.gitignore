@@ -23,3 +23,6 @@ Thumbs.db
 # 临时文件
 *.tmp
 *.bak
+
+# 本地私有内容，不上传
+private-local/
